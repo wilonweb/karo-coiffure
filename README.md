@@ -1,43 +1,44 @@
-# Astro Starter Kit: Minimal
+# Karo Coiffure
 
-```sh
-npm create astro@latest -- --template minimal
+Site vitrine one-page pour **Karo Coiffure**, salon de coiffure mixte à La Ciotat.
+
+## Stack
+
+- [AstroJS](https://astro.build) — framework statique, pas de JS framework additionnel
+- CSS vanilla avec variables custom
+- Google Fonts — Space Grotesk
+- GitHub Pages — déploiement automatique via GitHub Actions
+
+## URL de production
+
+**https://wilonweb.github.io/karo-coiffure/**
+
+## Lancer en local
+
+```bash
+npm install
+npx astro dev --background   # démarre sur http://localhost:4321
+npx astro dev stop           # arrête le serveur
+npx astro dev logs           # voir les logs
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Build
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run build   # génère ./dist/
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Structure
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```
+src/
+├── pages/
+│   └── index.astro     # page unique (toutes les sections)
+└── styles/
+    └── global.css      # variables, reset, utilitaires
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Déploiement
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Chaque push sur `main` déclenche GitHub Actions → build Astro → deploy sur GitHub Pages.
+Voir l'avancement : https://github.com/wilonweb/karo-coiffure/actions
