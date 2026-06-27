@@ -2,6 +2,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://karo.wilonweb.com',
-  base: '/',
+  site: 'https://wilonweb.github.io',
+  base: '/karo-coiffure',
 });
