@@ -1,17 +1,515 @@
 ---
-
+import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Karo Coiffure — Salon de coiffure mixte haut de gamme à La Ciotat." />
+    <title>Karo Coiffure — La Ciotat</title>
+  </head>
+
+  <body>
+
+    <!-- ========================
+         NAV
+    ========================= -->
+    <nav class="nav">
+      <div class="container nav__inner">
+        <span class="nav__logo">Karo Coiffure</span>
+        <ul class="nav__links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="tel:+33600000000" class="nav__cta">Prendre RDV</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========================
+         HERO
+    ========================= -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <span class="section-label">Salon de coiffure mixte · La Ciotat</span>
+        <h1 class="hero__title">
+          L'art de<br />sublimer vos<br />cheveux.
+        </h1>
+        <p class="hero__sub">
+          Coupe, couleur, soin — une expérience sur-mesure<br />
+          dans un cadre élégant au cœur de La Ciotat.
+        </p>
+        <a href="tel:+33600000000" class="btn">Prendre rendez-vous</a>
+      </div>
+      <div class="hero__line" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========================
+         SERVICES
+    ========================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <span class="section-label">Ce que nous faisons</span>
+        <h2 class="section-title">Nos services</h2>
+
+        <div class="cards">
+
+          <!-- Coupe -->
+          <article class="card">
+            <div class="card__icon">✂</div>
+            <h3 class="card__title">Coupe</h3>
+            <p class="card__text">
+              Coupe femme, homme ou enfant adaptée à votre morphologie et votre style.
+              Finition au rasoir ou aux ciseaux, brushing inclus.
+            </p>
+          </article>
+
+          <!-- Couleur -->
+          <article class="card">
+            <div class="card__icon">◈</div>
+            <h3 class="card__title">Couleur</h3>
+            <p class="card__text">
+              Balayage, ombré, teinture pleine tête ou mèches — des techniques modernes
+              pour un résultat lumineux et naturel.
+            </p>
+          </article>
+
+          <!-- Soin -->
+          <article class="card">
+            <div class="card__icon">◉</div>
+            <h3 class="card__title">Soin</h3>
+            <p class="card__text">
+              Traitements nourrissants et réparateurs pour cheveux secs, abîmés ou colorés.
+              Kératine, masques professionnels, lissage.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         À PROPOS
+    ========================= -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__text">
+          <span class="section-label">Notre histoire</span>
+          <h2 class="section-title">Bonjour, je suis Karo.</h2>
+          <p>
+            Passionnée de coiffure depuis plus de 15 ans, j'ai ouvert mon salon
+            à La Ciotat avec une conviction simple : chaque personne mérite une
+            coiffure qui lui ressemble vraiment.
+          </p>
+          <p>
+            Ici, pas de précipitation. On prend le temps de vous écouter,
+            de comprendre votre quotidien et de créer un look qui s'adapte
+            à vous — pas l'inverse.
+          </p>
+          <p>
+            Produits sélectionnés avec soin, technique maîtrisée et ambiance
+            détendue : bienvenue chez Karo Coiffure.
+          </p>
+        </div>
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__shape"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         CONTACT
+    ========================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <span class="section-label">Nous trouver</span>
+        <h2 class="section-title">Venir nous voir</h2>
+
+        <div class="contact-grid">
+
+          <div class="contact-item">
+            <span class="contact-item__label">Adresse</span>
+            <p>
+              12 Rue de la République<br />
+              13600 La Ciotat
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">Téléphone</span>
+            <p>
+              <a href="tel:+33600000000" class="contact-link">06 00 00 00 00</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">Horaires</span>
+            <p>
+              Mar – Sam : 9h – 18h<br />
+              Dimanche & Lundi : fermé
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">Instagram</span>
+            <p>
+              <a
+                href="https://instagram.com/karocoiffure"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+              >
+                @karocoiffure
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+        <a href="tel:+33600000000" class="btn" style="margin-top: 3rem;">
+          Appeler pour réserver
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+    ========================= -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__logo">Karo Coiffure</span>
+        <p class="footer__copy">
+          © 2024 Karo Coiffure · La Ciotat · Tous droits réservés
+        </p>
+        <a
+          href="https://instagram.com/karocoiffure"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__insta"
+          aria-label="Instagram"
+        >
+          Instagram
+        </a>
+      </div>
+    </footer>
+
+  </body>
 </html>
+
+<style>
+  /* ========================
+     NAV
+  ========================= */
+  .nav {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 100;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid transparent;
+    transition: background 0.3s, border-color 0.3s;
+  }
+
+  /* Fond au scroll via JS inline minimal */
+  .nav--scrolled {
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    border-color: var(--color-border);
+  }
+
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .nav__links a {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .nav__links a:hover { opacity: 1; }
+
+  .nav__cta {
+    opacity: 1 !important;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--color-white);
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s !important;
+  }
+  .nav__cta:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+  }
+
+  /* ========================
+     HERO
+  ========================= */
+  .hero {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 1.5rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__title {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    margin-block: 1.5rem;
+  }
+
+  .hero__sub {
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+
+  /* Ligne décorative verticale */
+  .hero__line {
+    position: absolute;
+    right: 12%;
+    top: 15%;
+    width: 1px;
+    height: 55%;
+    background: linear-gradient(to bottom, transparent, var(--color-accent), transparent);
+    opacity: 0.4;
+  }
+
+  /* ========================
+     BOUTON GLOBAL
+  ========================= */
+  .btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+
+  /* ========================
+     CARDS SERVICES
+  ========================= */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2.5rem 2rem;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+  }
+
+  .card__icon {
+    font-size: 1.75rem;
+    color: var(--color-accent);
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+
+  .card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .card__text {
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    line-height: 1.7;
+  }
+
+  /* ========================
+     À PROPOS
+  ========================= */
+  .about {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about__text p {
+    color: var(--color-muted);
+    margin-bottom: 1rem;
+    max-width: 480px;
+    line-height: 1.8;
+  }
+
+  /* Forme décorative abstraite */
+  .about__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__shape {
+    width: 280px;
+    height: 380px;
+    border: 1px solid var(--color-accent);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    opacity: 0.25;
+    position: relative;
+  }
+  .about__shape::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 1px solid var(--color-accent);
+    border-radius: inherit;
+    opacity: 0.5;
+  }
+
+  /* ========================
+     CONTACT
+  ========================= */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .contact-item__label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .contact-item p {
+    color: var(--color-muted);
+    line-height: 1.7;
+  }
+
+  .contact-link {
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+  }
+  .contact-link:hover {
+    border-color: var(--color-accent);
+  }
+
+  /* ========================
+     FOOTER
+  ========================= */
+  .footer {
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 1.5rem;
+  }
+
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer__logo {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .footer__copy {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+  }
+
+  .footer__insta {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .footer__insta:hover { opacity: 1; }
+
+  /* ========================
+     RESPONSIVE
+  ========================= */
+  @media (max-width: 768px) {
+    .nav__links {
+      display: none; /* simplifié sur mobile */
+    }
+
+    .about__inner {
+      grid-template-columns: 1fr;
+    }
+
+    .about__visual {
+      display: none;
+    }
+  }
+</style>
+
+<!-- Nav scroll effect (vanilla JS, minimal) -->
+<script>
+  const nav = document.querySelector('.nav');
+  window.addEventListener('scroll', () => {
+    nav?.classList.toggle('nav--scrolled', window.scrollY > 40);
+  }, { passive: true });
+</script>
